@@ -1,3 +1,18 @@
+"""
+The model of the API. Apart from the database models, it also exports model utility functions.
+
+Exports the classes:
+    Book
+    User
+    BookRequest
+, the following methods:
+    get_or_create_user
+    get_or_create_request
+, and:
+    db - the SQL Alchemy database object of the application
+
+"""
+
 from typing import Tuple
 from datetime import datetime
 

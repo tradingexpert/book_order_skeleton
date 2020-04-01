@@ -1,4 +1,18 @@
-from typing import Tuple, Dict, Union
+"""
+Views (routing) of the application.
+
+Exports methods:
+    check_if_json_correct - utility method used in the views
+    add_request
+    get_request
+    delete_request
+, and:
+    api - the global application view
+    add_schema - json validation schema for add requests
+    email_only_schema - json validation schema for delete and get requests
+"""
+
+from typing import Tuple, Dict
 
 from flask import Blueprint, Request, request, jsonify
 from jsonschema import validate

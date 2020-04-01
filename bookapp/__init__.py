@@ -1,3 +1,10 @@
+"""
+An application that performs basic web-service API functionality, using json-based communication.
+
+Exports method:
+    create_app - factory method for creating a flask application
+"""
+
 import os
 
 from flask import Flask
