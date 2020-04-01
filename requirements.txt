@@ -1,0 +1,7 @@
+flask
+flask-sqlalchemy
+sqlalchemy
+flask-migrate
+requests
+pytest-flask
+jsonschema
