@@ -11,6 +11,7 @@ class TestConfig(object):
     SQLALCHEMY_DATABASE_URI = f'sqlite:///{str(Path(__file__).parent.parent / "bookrequests.db")}'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+
 # TODO: Would be in a separate untracked file
 class ProductionConfig(TestConfig):
     # Override where necessary

@@ -1,11 +1,18 @@
+import os
+
 from flask import Flask
 from flask_migrate import Migrate
 
 
-def create_app(config_obj: object) -> Flask:
+def create_app(config_obj: object = None) -> Flask:
     """Flask application factory"""
     app = Flask('bookapp')
-    app.config.from_object(config_obj)
+
+    if not config_obj:
+        # Read object file from the environment variable
+        app.config.from_object(os.environ['APP_CONFIG'])
+    else:
+        app.config.from_object(config_obj)
 
     from bookapp.models import db
     from bookapp.views import api
