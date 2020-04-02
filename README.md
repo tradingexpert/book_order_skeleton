@@ -1,6 +1,6 @@
-This is a test implementation of a book requesting service/ API
+This is a test implementation of a book ordering service/ API
 ---
-Docker deployment details:  
+### Docker deployment details  
 Simply run:  
 `docker-compose up -d`  
 
